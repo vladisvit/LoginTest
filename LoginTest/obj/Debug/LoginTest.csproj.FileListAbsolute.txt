@@ -1,0 +1,12 @@
+C:\Projects\LoginTest_v1\LoginTest\bin\Debug\LoginTest.exe
+C:\Projects\LoginTest_v1\LoginTest\bin\Debug\LoginTest.pdb
+C:\Projects\LoginTest_v1\LoginTest\bin\Debug\LWork.dll
+C:\Projects\LoginTest_v1\LoginTest\bin\Debug\LWork.pdb
+C:\Projects\LoginTest_v1\LoginTest\obj\Debug\LoginTest.csprojResolveAssemblyReference.cache
+C:\Projects\LoginTest_v1\LoginTest\obj\Debug\LoginTest.frmLogIn.resources
+C:\Projects\LoginTest_v1\LoginTest\obj\Debug\LoginTest.frmMain.resources
+C:\Projects\LoginTest_v1\LoginTest\obj\Debug\LoginTest.Properties.Resources.resources
+C:\Projects\LoginTest_v1\LoginTest\obj\Debug\LoginTest.frmRegistration.resources
+C:\Projects\LoginTest_v1\LoginTest\obj\Debug\LoginTest.csproj.GenerateResource.Cache
+C:\Projects\LoginTest_v1\LoginTest\obj\Debug\LoginTest.exe
+C:\Projects\LoginTest_v1\LoginTest\obj\Debug\LoginTest.pdb

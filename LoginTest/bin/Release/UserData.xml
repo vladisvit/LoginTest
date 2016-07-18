@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ArrayOfUserData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UserData>
+    <Name>kvn</Name>
+    <Nikname>kvn</Nikname>
+    <Password>0D8A5AA1D3E9D4EAB16B5E4C55CDDD1</Password>
+  </UserData>
+  <UserData>
+    <Name>1</Name>
+    <Nikname>1</Nikname>
+    <Password>C4CA4238A0B92382DCC509A6F75849B</Password>
+  </UserData>
+  <UserData>
+    <Name>121</Name>
+    <Nikname>121</Nikname>
+    <Password>4C56FF4CE4AAF9573AA5DFF913DF997A</Password>
+  </UserData>
+  <UserData>
+    <Name>Vladimir</Name>
+    <Nikname>vladisvit</Nikname>
+    <Password>704E6D2CACDCC573FAAEBFBFDF18F19</Password>
+  </UserData>
+</ArrayOfUserData>

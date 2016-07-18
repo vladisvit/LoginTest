@@ -1,0 +1,5 @@
+C:\Projects\LoginTest_v1\LWork\bin\Debug\LWork.dll
+C:\Projects\LoginTest_v1\LWork\bin\Debug\LWork.pdb
+C:\Projects\LoginTest_v1\LWork\obj\Debug\LWork.csprojResolveAssemblyReference.cache
+C:\Projects\LoginTest_v1\LWork\obj\Debug\LWork.dll
+C:\Projects\LoginTest_v1\LWork\obj\Debug\LWork.pdb
