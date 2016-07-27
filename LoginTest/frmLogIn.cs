@@ -133,7 +133,7 @@ namespace LoginTest
 
       if (DialogResult.OK == frmReg.ShowDialog(this))
       {
-        this.tbxUserName.Text = frmReg.tbNikName.Text;
+        this.tbxUserName.Text = frmReg.tbxUserName.Text;
         this.tbxPassword.Text = frmReg.tbPassword.Text;
         ValidateTextBox(tbxUserName, new CancelEventArgs());
         ValidateTextBox(tbxPassword, new CancelEventArgs());

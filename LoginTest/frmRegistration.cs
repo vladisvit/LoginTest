@@ -29,7 +29,7 @@ namespace LoginTest
       InitializeComponent();
       // The validating events of the text boxes
       tbName.Validating += new CancelEventHandler(ValidateTextBox);
-      tbNikName.Validating += new CancelEventHandler(ValidateTextBox);
+      tbxUserName.Validating += new CancelEventHandler(ValidateTextBox);
       tbPassword.Validating += new CancelEventHandler(ValidateTextBox);
     }
 
@@ -54,7 +54,7 @@ namespace LoginTest
             isNameValid = false;
             break;
           case 1:
-            errorProvider1.SetError(tbNikName, "Please, enter your nikname");
+            errorProvider1.SetError(tbxUserName, "Please, enter your nikname");
             isUserNameValid = false;
             break;
           case 2:
@@ -69,7 +69,7 @@ namespace LoginTest
         {
           case 0: errorProvider1.SetError(tbName, "");
             break;
-          case 1: errorProvider1.SetError(tbNikName, "");
+          case 1: errorProvider1.SetError(tbxUserName, "");
             break;
           case 2: errorProvider1.SetError(tbPassword, "");
             break;
@@ -110,7 +110,7 @@ namespace LoginTest
     {
       UserData user = new UserData();
       user.Name = tbName.Text;
-      user.UserName = tbNikName.Text;
+      user.UserName = tbxUserName.Text;
       user.Password = LoginWork.HashString(tbPassword.Text);
 
       if (LoginWork.Save(user))

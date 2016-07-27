@@ -32,7 +32,7 @@
             this.btnOK = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.tbName = new System.Windows.Forms.TextBox();
-            this.tbNikName = new System.Windows.Forms.TextBox();
+            this.tbxUserName = new System.Windows.Forms.TextBox();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -72,14 +72,14 @@
             this.tbName.TabIndex = 0;
             this.tbName.Tag = "0";
             // 
-            // tbNikName
+            // tbxUserName
             // 
-            this.tbNikName.Location = new System.Drawing.Point(32, 148);
-            this.tbNikName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tbNikName.Name = "tbNikName";
-            this.tbNikName.Size = new System.Drawing.Size(362, 26);
-            this.tbNikName.TabIndex = 1;
-            this.tbNikName.Tag = "1";
+            this.tbxUserName.Location = new System.Drawing.Point(32, 148);
+            this.tbxUserName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbxUserName.Name = "tbxUserName";
+            this.tbxUserName.Size = new System.Drawing.Size(362, 26);
+            this.tbxUserName.TabIndex = 1;
+            this.tbxUserName.Tag = "1";
             // 
             // tbPassword
             // 
@@ -135,7 +135,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbPassword);
-            this.Controls.Add(this.tbNikName);
+            this.Controls.Add(this.tbxUserName);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
@@ -157,7 +157,7 @@
     private System.Windows.Forms.Label label2;
     private System.Windows.Forms.Label label3;
     private System.Windows.Forms.ErrorProvider errorProvider1;
-    public System.Windows.Forms.TextBox tbNikName;
+    public System.Windows.Forms.TextBox tbxUserName;
     public System.Windows.Forms.TextBox tbPassword;
   }
 }
