@@ -25,12 +25,12 @@ namespace LWork
       set { _Name = value; }
     }
 
-    private string _Nikname;
+    private string _userName;
 
-    public string Nikname
+    public string UserName
     {
-      get { return _Nikname; }
-      set { _Nikname = value; }
+      get { return _userName; }
+      set { _userName = value; }
     }
 
     private string _Password;

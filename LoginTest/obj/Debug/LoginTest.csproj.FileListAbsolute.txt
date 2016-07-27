@@ -10,3 +10,4 @@ C:\Projects\LoginTest_v1\LoginTest\obj\Debug\LoginTest.frmRegistration.resources
 C:\Projects\LoginTest_v1\LoginTest\obj\Debug\LoginTest.csproj.GenerateResource.Cache
 C:\Projects\LoginTest_v1\LoginTest\obj\Debug\LoginTest.exe
 C:\Projects\LoginTest_v1\LoginTest\obj\Debug\LoginTest.pdb
+C:\Projects\LoginTest_v1\LoginTest\bin\Debug\LoginTest.exe.config

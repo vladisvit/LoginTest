@@ -22,13 +22,13 @@ namespace LoginTest
     #region Fields
 
     // the value of fails
-    private int _countLogFailed;
+    private int _failedAttempts;
 
     // the value of permissions on the error at one login procedure 
-    private int _logins;
+    private readonly int _attempts;
 
     // the flag of validate
-    private bool _ValidForm;
+    private bool _isValid;
 
     #endregion
 
@@ -37,10 +37,10 @@ namespace LoginTest
     public frmLogIn()
     {
       InitializeComponent();
-      _countLogFailed = 0;
-      _logins = 3;
-      tbName.Validating += new CancelEventHandler(ValidateTextBox);
-      tbPassword.Validating += new CancelEventHandler(ValidateTextBox);
+      _failedAttempts = 0;
+      _attempts = 3;
+      tbxUserName.Validating += new CancelEventHandler(ValidateTextBox);
+      tbxPassword.Validating += new CancelEventHandler(ValidateTextBox);
     }
 
     private void frmLogIn_Load( object sender, EventArgs e )
@@ -54,19 +54,19 @@ namespace LoginTest
 
     private void ValidateTextBox( object sender, CancelEventArgs e )
     {
-      bool NameValid = true, PasswordValid = true;
+      bool isNameValid = true, isPasswordValid = true;
 
       if (String.IsNullOrEmpty(((TextBox)sender).Text))
       {
         switch (Convert.ToByte(((TextBox)sender).Tag))
         {
           case 0:
-            errorProvider1.SetError(tbName, "Please, enter your name");
-            NameValid = false;
+            errorProvider1.SetError(tbxUserName, "Please, enter your name");
+            isNameValid = false;
             break;
           case 1:
-            errorProvider1.SetError(tbPassword, "Please, enter your password");
-            PasswordValid = false;
+            errorProvider1.SetError(tbxPassword, "Please, enter your password");
+            isPasswordValid = false;
             break;
         }
       }
@@ -75,13 +75,13 @@ namespace LoginTest
         switch (Convert.ToByte(((TextBox)sender).Tag))
         {
           case 0:
-            errorProvider1.SetError(tbName, "");
+            errorProvider1.SetError(tbxUserName, "");
             break;
-          case 1: errorProvider1.SetError(tbPassword, "");
+          case 1: errorProvider1.SetError(tbxPassword, "");
             break;
         }
       }
-      _ValidForm = NameValid && PasswordValid;
+      _isValid = isNameValid && isPasswordValid;
     }
 
     #endregion
@@ -90,10 +90,10 @@ namespace LoginTest
     private void btnLogin_Click( object sender, EventArgs e )
     {
 
-      if (_ValidForm)
+      if (_isValid)
       {
-        //Check the nikname and the password
-        LoginWork.DoLogin(tbName.Text, tbPassword.Text);
+        //Check the username and the password
+        LoginWork.DoLogin(tbxUserName.Text, tbxPassword.Text);
 
         if (LoginWork.Logged) //check the logged flag
         {
@@ -101,23 +101,24 @@ namespace LoginTest
         }
         else
         {
-          _countLogFailed++;
-          if (_countLogFailed > _logins - 1)
+          _failedAttempts++;
+          if (_failedAttempts > _attempts - 1)
           {
             //You can do to close login form or do waiting user for instance 1 minute
-            MessageBox.Show("You entered wrong password or nikname 3 times. \n You can do login after 1 minute");
+            MessageBox.Show(@"You entered wrong password or username 3 times. \n You can do login after 1 minute");
 
-            Thread.Sleep(60000);
+            Thread.Sleep(1000);
             return;
 
             //this.Close();
           }
-          MessageBox.Show("The password or the nik name are wrong. \n Please, try again. \n Remaining logins: "
-            + (_logins - _countLogFailed).ToString(), "Login failed", MessageBoxButtons.OK);
+
+          MessageBox.Show(@"The password or the username are wrong. \n Please, try again. \n Remaining logins: "
+            + (_attempts - _failedAttempts).ToString(), "Login failed", MessageBoxButtons.OK);
         }
       }
       else
-        MessageBox.Show("Please, fill all text boxes");
+        MessageBox.Show(@"Please, fill all text boxes");
 
     }
 
@@ -132,10 +133,10 @@ namespace LoginTest
 
       if (DialogResult.OK == frmReg.ShowDialog(this))
       {
-        this.tbName.Text = frmReg.tbNikName.Text;
-        this.tbPassword.Text = frmReg.tbPassword.Text;
-        ValidateTextBox(tbName, new CancelEventArgs());
-        ValidateTextBox(tbPassword, new CancelEventArgs());
+        this.tbxUserName.Text = frmReg.tbNikName.Text;
+        this.tbxPassword.Text = frmReg.tbPassword.Text;
+        ValidateTextBox(tbxUserName, new CancelEventArgs());
+        ValidateTextBox(tbxPassword, new CancelEventArgs());
 
       }
 

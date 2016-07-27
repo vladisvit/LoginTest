@@ -22,5 +22,17 @@ namespace LoginTest.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("UserData.xml")]
+        public string userDataFileName {
+            get {
+                return ((string)(this["userDataFileName"]));
+            }
+            set {
+                this["userDataFileName"] = value;
+            }
+        }
     }
 }

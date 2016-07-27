@@ -20,7 +20,7 @@ namespace LoginTest
   public partial class frmRegistration: Form
   {
     // the flag of validate
-    private bool _ValidForm;
+    private bool _isValid;
 
     #region Initialization
 
@@ -44,22 +44,22 @@ namespace LoginTest
     /// <param name="e"></param>
     private void ValidateTextBox( object sender, CancelEventArgs e )
     {
-      bool NameValid = true, NikNameValid = true, PasswordValid = true;
+      bool isNameValid = true, isUserNameValid = true, isPasswordValid = true;
       if (String.IsNullOrEmpty(((TextBox)sender).Text))
       {
         switch (Convert.ToByte(((TextBox)sender).Tag))
         {
           case 0:
             errorProvider1.SetError(tbName, "Please, enter your name");
-            NameValid = false;
+            isNameValid = false;
             break;
           case 1:
             errorProvider1.SetError(tbNikName, "Please, enter your nikname");
-            NikNameValid = false;
+            isUserNameValid = false;
             break;
           case 2:
             errorProvider1.SetError(tbPassword, "Please, enter your password");
-            PasswordValid = false;
+            isPasswordValid = false;
             break;
         }
       }
@@ -76,7 +76,7 @@ namespace LoginTest
         }
       }
 
-      _ValidForm = NameValid && NikNameValid && PasswordValid;
+      _isValid = isNameValid && isUserNameValid && isPasswordValid;
 
     }
 
@@ -87,7 +87,7 @@ namespace LoginTest
     private void btnOK_Click( object sender, EventArgs e )
     {
 
-      if (_ValidForm) //check filling the text boxes
+      if (_isValid) //check filling the text boxes
       {
         SaveDataUser();
       }
@@ -110,7 +110,7 @@ namespace LoginTest
     {
       UserData user = new UserData();
       user.Name = tbName.Text;
-      user.Nikname = tbNikName.Text;
+      user.UserName = tbNikName.Text;
       user.Password = LoginWork.HashString(tbPassword.Text);
 
       if (LoginWork.Save(user))
@@ -120,7 +120,7 @@ namespace LoginTest
       }
       else
       {
-        MessageBox.Show(this, "This nik name: " + user.Nikname + " is exist. Please, choose another nik name");
+        MessageBox.Show(this, "This nik name: " + user.UserName + " is exist. Please, choose another nik name");
         this.DialogResult = DialogResult.Cancel;
       }
     }

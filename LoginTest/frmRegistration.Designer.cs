@@ -28,114 +28,123 @@
     /// </summary>
     private void InitializeComponent()
     {
-      this.components = new System.ComponentModel.Container();
-      this.btnOK = new System.Windows.Forms.Button();
-      this.btnCancel = new System.Windows.Forms.Button();
-      this.tbName = new System.Windows.Forms.TextBox();
-      this.tbNikName = new System.Windows.Forms.TextBox();
-      this.tbPassword = new System.Windows.Forms.TextBox();
-      this.label1 = new System.Windows.Forms.Label();
-      this.label2 = new System.Windows.Forms.Label();
-      this.label3 = new System.Windows.Forms.Label();
-      this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-      ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-      this.SuspendLayout();
-      // 
-      // btnOK
-      // 
-      this.btnOK.Location = new System.Drawing.Point(23, 210);
-      this.btnOK.Name = "btnOK";
-      this.btnOK.Size = new System.Drawing.Size(75, 23);
-      this.btnOK.TabIndex = 3;
-      this.btnOK.Text = "OK";
-      this.btnOK.UseVisualStyleBackColor = true;
-      this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
-      // 
-      // btnCancel
-      // 
-      this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-      this.btnCancel.Location = new System.Drawing.Point(191, 210);
-      this.btnCancel.Name = "btnCancel";
-      this.btnCancel.Size = new System.Drawing.Size(75, 23);
-      this.btnCancel.TabIndex = 4;
-      this.btnCancel.Text = "Cancel";
-      this.btnCancel.UseVisualStyleBackColor = true;
-      // 
-      // tbName
-      // 
-      this.tbName.Location = new System.Drawing.Point(21, 36);
-      this.tbName.Name = "tbName";
-      this.tbName.Size = new System.Drawing.Size(243, 20);
-      this.tbName.TabIndex = 0;
-      this.tbName.Tag = "0";
-      // 
-      // tbNikName
-      // 
-      this.tbNikName.Location = new System.Drawing.Point(21, 96);
-      this.tbNikName.Name = "tbNikName";
-      this.tbNikName.Size = new System.Drawing.Size(243, 20);
-      this.tbNikName.TabIndex = 1;
-      this.tbNikName.Tag = "1";
-      // 
-      // tbPassword
-      // 
-      this.tbPassword.Location = new System.Drawing.Point(21, 157);
-      this.tbPassword.Name = "tbPassword";
-      this.tbPassword.Size = new System.Drawing.Size(243, 20);
-      this.tbPassword.TabIndex = 2;
-      this.tbPassword.Tag = "2";
-      // 
-      // label1
-      // 
-      this.label1.AutoSize = true;
-      this.label1.Location = new System.Drawing.Point(25, 19);
-      this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(35, 13);
-      this.label1.TabIndex = 3;
-      this.label1.Text = "Name";
-      // 
-      // label2
-      // 
-      this.label2.AutoSize = true;
-      this.label2.Location = new System.Drawing.Point(25, 80);
-      this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(52, 13);
-      this.label2.TabIndex = 3;
-      this.label2.Text = "Nik name";
-      // 
-      // label3
-      // 
-      this.label3.AutoSize = true;
-      this.label3.Location = new System.Drawing.Point(25, 141);
-      this.label3.Name = "label3";
-      this.label3.Size = new System.Drawing.Size(53, 13);
-      this.label3.TabIndex = 3;
-      this.label3.Text = "Password";
-      // 
-      // errorProvider1
-      // 
-      this.errorProvider1.ContainerControl = this;
-      // 
-      // frmRegistration
-      // 
-      this.AcceptButton = this.btnOK;
-      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.CancelButton = this.btnCancel;
-      this.ClientSize = new System.Drawing.Size(284, 246);
-      this.Controls.Add(this.label3);
-      this.Controls.Add(this.label2);
-      this.Controls.Add(this.label1);
-      this.Controls.Add(this.tbPassword);
-      this.Controls.Add(this.tbNikName);
-      this.Controls.Add(this.tbName);
-      this.Controls.Add(this.btnCancel);
-      this.Controls.Add(this.btnOK);
-      this.Name = "frmRegistration";
-      this.Text = "Registration_Form";
-      ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-      this.ResumeLayout(false);
-      this.PerformLayout();
+            this.components = new System.ComponentModel.Container();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.tbNikName = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // btnOK
+            // 
+            this.btnOK.Location = new System.Drawing.Point(34, 323);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(112, 35);
+            this.btnOK.TabIndex = 3;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancel.Location = new System.Drawing.Point(286, 323);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(112, 35);
+            this.btnCancel.TabIndex = 4;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // tbName
+            // 
+            this.tbName.Location = new System.Drawing.Point(32, 55);
+            this.tbName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(362, 26);
+            this.tbName.TabIndex = 0;
+            this.tbName.Tag = "0";
+            // 
+            // tbNikName
+            // 
+            this.tbNikName.Location = new System.Drawing.Point(32, 148);
+            this.tbNikName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbNikName.Name = "tbNikName";
+            this.tbNikName.Size = new System.Drawing.Size(362, 26);
+            this.tbNikName.TabIndex = 1;
+            this.tbNikName.Tag = "1";
+            // 
+            // tbPassword
+            // 
+            this.tbPassword.Location = new System.Drawing.Point(32, 242);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.Size = new System.Drawing.Size(362, 26);
+            this.tbPassword.TabIndex = 2;
+            this.tbPassword.Tag = "2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(38, 29);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Name";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(38, 123);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 20);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Username";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(38, 217);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(78, 20);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Password";
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // frmRegistration
+            // 
+            this.AcceptButton = this.btnOK;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnCancel;
+            this.ClientSize = new System.Drawing.Size(426, 378);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tbPassword);
+            this.Controls.Add(this.tbNikName);
+            this.Controls.Add(this.tbName);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnOK);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "frmRegistration";
+            this.Text = "Registration";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
     }
 

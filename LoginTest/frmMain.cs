@@ -46,7 +46,7 @@ namespace LoginTest
 
     private void frmMain_Load( object sender, EventArgs e )
     {
-      strHello = "Hello! " + LoginWork.User.Name + " aka (" + LoginWork.User.Nikname + ")";
+      strHello = "Hello! " + LoginWork.User.Name + " aka (" + LoginWork.User.UserName + ")";
     }
   }
 }

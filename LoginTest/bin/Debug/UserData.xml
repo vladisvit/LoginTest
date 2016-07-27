@@ -2,7 +2,7 @@
 <ArrayOfUserData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <UserData>
     <Name>kvn</Name>
-    <Nikname>kvn</Nikname>
+    <UserName>kvn11</UserName>
     <Password>704E6D2CACDCC573FAAEBFBFDF18F19</Password>
   </UserData>
 </ArrayOfUserData>

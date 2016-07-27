@@ -44,7 +44,7 @@ namespace LoginTest
 
             Form fSplash = new Form();
             var dir = Directory.GetCurrentDirectory();
-            var filePath = Path.Combine(dir, @"background.jpg");
+            var filePath = Path.Combine(dir, @"background.bmp");
             fSplash.BackgroundImage = System.Drawing.Image.FromFile(filePath);
 
             fSplash.BackgroundImageLayout = ImageLayout.Center;
@@ -54,7 +54,7 @@ namespace LoginTest
 
             fSplash.TransparencyKey = System.Drawing.Color.White;// it sets transparency for the background of image
 
-            // Set the splash form size and we are shure the image fit to the form
+            // Set the splash form size and we are sure the image fit to the form
             fSplash.Width = (int)fSplash.BackgroundImage.PhysicalDimension.Width;
             fSplash.Height = (int)fSplash.BackgroundImage.PhysicalDimension.Height;
 
@@ -70,12 +70,10 @@ namespace LoginTest
         /// </summary>
         private void CreateLoginForm()
         {
-
             fLogin = new frmLogIn();
             fLogin.Closed += new EventHandler(fLogin_Closed);
             this.MainForm = fLogin;
             fLogin.Show();
-
         }
 
         #endregion
@@ -94,7 +92,7 @@ namespace LoginTest
             if (LWork.LoginWork.Logged) //if the user is logged
             {
                 fMain = new frmMain();
-                this.MainForm = fMain; //set the main message loop applicaton in this form
+                this.MainForm = fMain; //set the main message loop application in this form
                 fMain.Show();
             }
             else

@@ -58,11 +58,11 @@ namespace LWork
     #region Private Procedures
 
     /// <summary>
-    /// Check exist this nikname in the users list
+    /// Check exist this username in the users list
     /// </summary>
-    /// <param name="NikName">Nikname of the user</param>
+    /// <param name="UserName">user name</param>
     /// <returns></returns>
-    private static bool IsExistNikName( string NikName )
+    private static bool IsExistNikName( string UserName )
     {
 
       if (_UserDataList.Count == 0)
@@ -71,10 +71,10 @@ namespace LWork
       }
       else
       {
-        // here I use a lambda expression for the searching the nikname in the user data list
-        _user = _UserDataList.FirstOrDefault(UserData => UserData.Nikname == NikName);
+        // here I use a lambda expression for the searching the username in the user data list
+        _user = _UserDataList.FirstOrDefault(UserData => UserData.UserName == UserName);
 
-        if (String.IsNullOrEmpty(_user.Nikname))
+        if (String.IsNullOrEmpty(_user.UserName))
         {
           return false;
         }
@@ -168,7 +168,7 @@ namespace LWork
     public static bool Save( UserData user )
     {
 
-      if (!IsExistNikName(user.Nikname))
+      if (!IsExistNikName(user.UserName))
       {
 
         _UserDataList.Add(user);
