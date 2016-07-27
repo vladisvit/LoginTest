@@ -139,6 +139,7 @@
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmRegistration";
             this.Text = "Registration";
